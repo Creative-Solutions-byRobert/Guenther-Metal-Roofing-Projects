@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="guenther_favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src='js.js'></script>
+  <title>Invoice</title>
+</head>
+
+<body>
+  <div class="logo-section">
+    <div class="logo">
+      <img id='logo-image' src="guenther.png" alt="">
+    </div>
+
+  </div>
+  <div class='contact'>
+    <div>
+      <div id='date'>date</div>
+      <div>Name: <span id='name'></span></div>
+      <div>Address: <span id='address'></span></div>
+      <div>Phone Number: <span id='phone'></span></div>
+      <div>Email: <span id='email'></span></div>
+    </div>
+    <div class='contact-us'>
+      <h3 id="companyName">Guenther Metal Roofing</h3>
+      <div>
+
+
+        <p id="companyAddress">9585 Old Schisler Rd</p>
+        <p id="companyCity">Welland ON</p>
+
+        <p id="companySalesPhone">Sales: 905-651-2503</p>
+        <p id="companySalesEmail">sales@guentherroofing.ca</p>
+        <p id="ownerPhone">Owner: 289-213-7257</p>
+        <p id="ownerEmail">Johnny@guentherroofing.ca</p>
+      </div>
+    </div>
+  </div>
+  <div class='includes-subtotal'>
+    <div>
+      <div>Total Square Feet: <span id='sqft'></span></div>
+      <div class='includes-label'>This includes:
+        <div id='specialNote'></div>
+        <ul id='includesText'>
+          <h3>Renovating roof</h3>
+          <li>1”x 4” strapping over existing shingles</li>
+          <li>Metal sheets and all pertinent roof trim</li>
+          <li>Snow guard along all the eaves to prevent snow from falling</li>
+          <li>Cutting open vertical ridges for maximum ventilation</li>
+        </ul>
+        <p id='matteFinish'></p>
+        <div>
+          <h3>On a new construction</h3>
+          <p>we also include synthetic underlayment</p>
+        </div>
+        <div>Payment Options:
+          <ul>
+            <li>Credit Card</li>
+            <li>Cheques</li>
+            <li>E-Transfers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='subtotal-section'>
+      <div>Subtotal: $<span id='subtotal'></span></div>
+      <div>Tax: $<span id='tax'></span></div>
+      <div>Total: $<span id='total'></span></div>
+    </div>
+  </div>
+</body>
+
+</html>
