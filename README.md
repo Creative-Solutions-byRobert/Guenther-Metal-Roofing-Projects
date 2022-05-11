@@ -4,10 +4,11 @@ A collection of projects for Johnny Guenther
 What you will find in this repository:
 
 ## Invoice
-	- Web App to make a Quote for the customer
-	- This Web App uses Node.js as the web server
+- Web App to make a Quote for the customer
+- This Web App uses Node.js as the web server
+
 ## Input
-	- Input Page to get input for the customer infomation
+- Input Page to get input for the customer infomation
 
 You can view the Blank Invoice without Node.js [Here](https://creative-solutions-byrobert.github.io/Guenther-Metal-Roofing-Projects/Invoice)
 
