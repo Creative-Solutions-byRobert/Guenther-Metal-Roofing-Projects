@@ -1,13 +1,3 @@
-function formatPhoneNumber( phoneNumberString ) {
-	var cleaned = ( '' + phoneNumberString ).replace( /\D/g, '' );
-	var match = cleaned.match( /^(1|)?(\d{3})(\d{3})(\d{4})$/ );
-	if ( match ) {
-		var intlCode = ( match[ 1 ] ? '+1 ' : '' );
-		return [ intlCode, '(', match[ 2 ], ') ', match[ 3 ], '-', match[ 4 ] ].join( '' );
-	}
-	return null;
-}
-
 function getInputValues() {
 	const name = $( '#name' ).val()
 	const address = $( '#address' ).val()
@@ -24,7 +14,6 @@ function getInputValues() {
 	const includesText = $( '#includesText' ).val()
 	const defaultIncludesText = $( '#defaultIncludesText' ).is( ':checked' )
 	const matte = $( '#matte' ).is( ':checked' )
-
 
 	if ( includesText === '' && !defaultIncludesText ) {
 		if ( confirm( 'Use default includes text?' ) ) {
@@ -52,5 +41,6 @@ function getInputValues() {
 		'defaultIncludesText': defaultIncludesText,
 		'matteChecked': matte
 	}
+
 	return inputValues
 }

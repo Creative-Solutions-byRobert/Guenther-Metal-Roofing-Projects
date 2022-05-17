@@ -1,0 +1,116 @@
+html, body, div, h1, h2, h3, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-section {
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 305px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 80%;
+  height: 80%;
+  margin-top: 25px;
+}
+
+
+.logo h1:last-of-type {
+  position: relative;
+  left: 25px;
+  bottom: 45px;
+}
+
+#date {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  width: 700px;
+  margin: 25px auto;
+}
+
+.contact-us > div {
+  width: 250px;
+}
+
+.contact-us div p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-us h3 {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#specialNote {
+  margin-bottom: 25px;
+}
+
+.includes-subtotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
+  font-size: 19px;
+  margin: 25px auto;
+
+}
+
+.includes-label {
+  margin-top: 25px;
+}
+
+.includes-label div {
+  margin-top: 25px;
+  width: 500px;
+}
+
+#includesText li {
+  list-style: none;
+}
+
+.subtotal-section {
+  align-self: flex-end;
+
+}
+#matteFinish {
+  margin-top: 25px;
+}
+
+input[type*='checkbox'] {
+  transform: scale(1.8);
+}
+
+.overlay {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+}
