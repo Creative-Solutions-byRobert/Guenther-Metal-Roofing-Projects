@@ -1,61 +1,71 @@
-<div class="logo-section">
-  <div class="logo">
-    <img id='logo-image' src="guenther.png" alt="">
-  </div>
+<div class="row justify-content-center">
 
-</div>
-<div class='contact'>
-  <div>
-    <div id='date'>date</div>
-    <div>Name: <span id='customerName'></span></div>
-    <div>Address: <span id='customerAddress'></span></div>
-    <div>Phone Number: <span id='customerPhone'></span></div>
-    <div>Email: <span id='customerEmail'></span></div>
-  </div>
-  <div class='contact-us'>
-    <h3 id="companyName">Guenther Metal Roofing</h3>
+  <!-- <h1 class='col-12 text-center'>Guenther Metal Roofing</h1> -->
+  <h1 class='col-12 text-center'>Highbreeze Roofing</h1>
+
+  <div class='d-flex justify-content-center'>
     <div>
+      <!-- <img id='logo-image' src="small_logo.png" alt=""> -->
+      <img id='logo-image' src="highbreeze_small.png" alt="">
 
-
-      <p id="companyAddress">9585 Old Schisler Rd</p>
+    </div>
+    <div class='ms-5'>
+      <!-- <p id="companyAddress">9585 Old Schisler Rd</p>
       <p id="companyCity">Welland ON</p>
-
       <p id="companySalesPhone">Sales: 905-651-2503</p>
       <p id="companySalesEmail">sales@guentherroofing.ca</p>
       <p id="ownerPhone">Owner: 289-213-7257</p>
-      <p id="ownerEmail">Johnny@guentherroofing.ca</p>
+      <p id="ownerEmail">Johnny@guentherroofing.ca</p> -->
+
+      <!-- Highbreeze -->
+      <p id="companyAddress">361 Bruce Rd 12</p>
+      <p id="companyCity">Teeswater ON</p>
+      <p id="ownerPhone">Owner: 519 292-1355</p>
+      <p id="ownerEmail">highbreeze@gmail.com</p>
+
     </div>
   </div>
+
 </div>
-<div class='includes-subtotal'>
-  <div>
-    <div>Total Square Feet: <span id='sqft'></span></div>
-    <div class='includes-label'>This includes:
-      <div id='specialNote'></div>
-      <ul id='InvoiceIncludesText'>
-        <h3>Renovating roof</h3>
-        <li>1”x 4” strapping over existing shingles</li>
-        <li>Metal sheets and all pertinent roof trim</li>
-        <li>Snow guard along all the eaves to prevent snow from falling</li>
-        <li>Cutting open vertical ridges for maximum ventilation</li>
-      </ul>
-      <p id='matteFinish'></p>
-      <div>
-        <h3>On a new construction</h3>
-        <p>we also include synthetic underlayment</p>
-      </div>
-      <div>Payment Options:
-        <ul>
-          <li>Credit Card</li>
-          <li>Cheques</li>
-          <li>E-Transfers</li>
-        </ul>
-      </div>
+
+
+<div class="row justify-content-center mt-2">
+
+  <div class="col-3 list-group">
+    <div id='date'>date</div>
+    <div class='list-group-item'>Name: <span id='customerName'></span></div>
+    <div class='list-group-item'>Address: <span id='customerAddress'></span></div>
+    <div class='list-group-item'>Phone Number: <span id='customerPhone'></span></div>
+    <div class='list-group-item'>Email: <span id='customerEmail'></span></div>
+    <div class='list-group-item'>Total Square Feet: <span id='sqft'></span></div>
+
+    <h5 class='mt-5'>Payment Options:</h5>
+
+    <div class='list-group-item'>Credit Card</div>
+    <div class='list-group-item'>Cheques</div>
+    <div class='list-group-item'>E-Transfers</div>
+
+    <div class="list-group mt-5">
+      <div class='list-group-item'>Subtotal: $<span id='InvoiceSubtotal'></span></div>
+      <div class='list-group-item'>Tax: $<span id='InvoiceTax'></span></div>
+      <div class='list-group-item'>Total: $<span id='InvoiceTotal'></span></div>
     </div>
   </div>
-  <div class='subtotal-section'>
-    <div>Subtotal: $<span id='InvoiceSubtotal'></span></div>
-    <div>Tax: $<span id='InvoiceTax'></span></div>
-    <div>Total: $<span id='InvoiceTotal'></span></div>
+
+  <div class='col-6 ms-5 p-5'>
+    <div id='specialNote'></div>
+    <ul id='InvoiceIncludesText' class='list-group'>
+      <h6>This includes:</h6>
+      <h4 class='list-group-item'>Renovating roof</h4>
+      <li class='list-group-item'>1”x 4” strapping over existing shingles</li>
+      <li class='list-group-item'>Metal sheets and all pertinent roof trim</li>
+      <li class='list-group-item'>Snow guard along all the eaves to prevent snow from falling</li>
+      <li class='list-group-item'>Cutting open vertical ridges for maximum ventilation</li>
+    </ul>
+    <p id='matteFinish'></p>
+    <div class='list-group'>
+      <h4 class='list-group-item mt-5'>On a new construction</h4>
+      <p class='list-group-item'>we also include synthetic underlayment</p>
+    </div>
   </div>
 </div>
