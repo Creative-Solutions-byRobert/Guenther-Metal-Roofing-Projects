@@ -14,3 +14,10 @@ $( '#defaultIncludesText' ).click( function() {
 		$( '#includesText' ).prop( 'disabled', false )
 	}
 } )
+
+
+$( '#color' ).on( 'change', function() {
+	if ( !this.value ) $( '#colorPalet' ).addClass( 'transparent' )
+
+	if ( this.value ) $( '#colorPalet' ).removeClass( 'transparent' ).css( 'background', '#' + this.value )
+} );

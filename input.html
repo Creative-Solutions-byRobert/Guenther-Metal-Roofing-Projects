@@ -31,12 +31,23 @@
           <div class="valid-feedback">Looks good!</div>
           <div class='invalid-feedback'>Please fill out this field.</div>
         </div>
-
+        <!--
         <div class="mb-3">
           <label for="email" class="form-label">Email Address</label>
-          <input id="email" class="form-control mb-3" type='email' required>
-          <div class="valid-feedback">Looks good!</div>
-          <div class='invalid-feedback'>Please fill out this field.</div>
+          <div class="input-group">
+            <span class="input-group-text">@</span>
+            <input id="email" class="form-control" type='email' required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class='invalid-feedback'>Please fill out this field.</div>
+          </div>
+        </div> -->
+
+        <label for="email" class="form-label">Email Address</label>
+        <div class="input-group mb-3">
+
+          <input id='email' type="text" class="form-control" placeholder="Username" aria-label="Username" required>
+          <span class="input-group-text">@</span>
+          <input id='server' type="text" class="form-control" placeholder="Server" aria-label="Server" required>
         </div>
 
         <div class="mb-3">
@@ -66,37 +77,44 @@
 
         <div class="mb-3">
           <label for="color" class="form-label">Pick a color</label>
-          <select id='color' class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-            <option value=''>Select a color here</option>
-            <option value="Sepia Brown">Sepia Brown</option>
-            <option value="Graphite Grey">Graphite Grey</option>
-            <option value="Ebony">Ebony</option>
-            <option value="Deep Grey">Deep Grey</option>
-            <option value="Liner White">Liner White</option>
-            <option value="White White">White White</option>
-            <option value="Bone White">Bone White</option>
-            <option value="Regent Grey">Regent Grey</option>
-            <option value="Stone Grey">Stone Grey</option>
-            <option value="Pebble Khaki">Pebble Khaki</option>
-            <option value="Buckskin">Buckskin</option>
-            <option value="Tan">Tan</option>
-            <option value="Antique Linen">Antique Linen</option>
-            <option value="Burnished Slate">Burnished Slate</option>
-            <option value="Dark Brown">Dark Brown</option>
-            <option value="Coffee Brown">Coffee Brown</option>
-            <option value="Charcoal">Charcoal</option>
-            <option value="Black">Black</option>
-            <option value="Jet Black">Jet Black</option>
-            <option value="Melcher’s Green">Melcher’s Green</option>
-            <option value="Slate Blue">Slate Blue</option>
-            <option value="Bright Red">Bright Red</option>
-            <option value="Tile Red">Tile Red</option>
-            <option value="Dark Red">Dark Red</option>
-            <option value="Galvanized">Galvanized</option>
-            <option value="Galvalume">Galvalume</option>
-          </select>
-          <div class="valid-feedback">Looks good!</div>
-          <div class='invalid-feedback'>Please fill out this field.</div>
+          <div class="input-group has-validation">
+            <span id='colorPalet' width='100px' class="input-group-text transparent"></span>
+
+            <select id='color' class="form-select form-select-lg" aria-label=".form-select-lg example" required>
+              <option value=''>Select a color here</option>
+              <option value="704214">Sepia Brown</option>
+              <option value="414141">Graphite Grey</option>
+              <option value="585E5B">Ebony</option>
+              <option value="a9a9a9">Deep Grey</option>
+              <option value="f8f7ed">Liner White</option>
+              <option value="FFFAFA">White White</option>
+              <option value="F9F6EE">Bone White</option>
+              <option value="979C99">Regent Grey</option>
+              <option value="888c8d">Stone Grey</option>
+              <option value="f2e4c5">Pebble Khaki</option>
+              <option value="cfab79">Buckskin</option>
+              <option value="D2B48C">Tan</option>
+              <option value="e4d3bb">Antique Linen</option>
+              <option value="5F5954">Burnished Slate</option>
+              <option value="654321">Dark Brown</option>
+              <option value="4a2c2a">Coffee Brown</option>
+              <option value="36454F">Charcoal</option>
+              <option value="000000">Black</option>
+              <option value="0A0A0A">Jet Black</option>
+              <option value="4D6B50">Melcher’s Green</option>
+              <option value="6a5acd">Slate Blue</option>
+              <option value="EE4B2B">Bright Red</option>
+              <option value="892d32">Tile Red</option>
+              <option value="8b0000">Dark Red</option>
+              <option value="a8bdc6">Galvanized</option>
+              <option value="BEBDBA">Galvalume</option>
+            </select>
+
+            <div class="valid-feedback">Looks good!</div>
+
+            <div class='invalid-feedback'>Please fill out this field.</div>
+
+          </div>
         </div>
 
         <div class="mb-3">

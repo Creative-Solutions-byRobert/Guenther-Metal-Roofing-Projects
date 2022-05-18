@@ -3,7 +3,7 @@ function getInputValues() {
 	const address = $( '#address' ).val()
 	const city = $( '#city' ).val()
 	const phoneN = formatPhoneNumber( $( '#phoneN' ).val() )
-	const email = $( '#email' ).val()
+	const email = $( '#email' ).val() + $( '#server' ).val()
 	const subtotal = parseFloat( $( '#subtotal' ).val() )
 	const tax = subtotal * 0.13
 	const total = subtotal + tax

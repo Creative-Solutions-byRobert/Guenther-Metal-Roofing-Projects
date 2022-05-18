@@ -1,6 +1,7 @@
 $( '.invoice' ).load( 'invoice.html' ).hide()
 $( '.overlay' ).load( 'input.html' )
 
+
 function checkAll_fields( object ) {
 	const required = [ 'name', 'address', 'city', 'phoneN', 'email', 'subtotal', 'mattePrice', 'color' ]
 	if ( !object ) return

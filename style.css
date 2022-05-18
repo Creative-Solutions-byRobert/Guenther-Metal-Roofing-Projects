@@ -2,3 +2,7 @@ p, div, li, h3, ul {
   margin: 0;
   padding: 0;
 }
+.transparent {
+  background-color: transparent !important;
+  border: 0;
+}
