@@ -1,3 +1,5 @@
+$( '.invoice' ).hide()
+
 function checkAll_fields( object ) {
 	const required = [ 'name', 'address', 'city', 'phoneN', 'email', 'subtotal', 'mattePrice', 'color' ]
 	if ( !object ) return
