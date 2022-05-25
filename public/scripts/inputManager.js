@@ -1,9 +1,9 @@
 function getInputValues() {
 	const name = $( '#name' ).val()
-	const address = $( '#address' ).val()
-	const city = $( '#city' ).val()
+	const address = `${$( '#address' ).val()}, ${$( '#city' ).val()}`
 	const phoneN = formatPhoneNumber( $( '#phoneN' ).val() )
-	const email = $( '#email' ).val() + $( '#server' ).val()
+	const email = `${$( '#email' ).val()}@${$( '#server' ).val()}`
+	const sqft = $( '#sqft-input' ).val()
 	const subtotal = parseFloat( $( '#subtotal' ).val() )
 	const tax = subtotal * 0.13
 	const total = subtotal + tax
@@ -27,9 +27,9 @@ function getInputValues() {
 	const inputValues = {
 		'name': name,
 		'address': address,
-		'city': city,
 		'phoneN': phoneN,
 		'email': email,
+		'sqft': sqft,
 		'subtotal': subtotal,
 		'tax': tax,
 		'total': total,

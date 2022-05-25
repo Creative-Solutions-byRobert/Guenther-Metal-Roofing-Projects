@@ -1,0 +1,25 @@
+@media print {
+  .print-body {
+    position: relative;
+    top: 30px;
+  }
+
+  .print-container {
+    justify-content: start !important;
+    position: relative;
+    top: 100px;
+  }
+
+  .print-contact {
+    position: absolute;
+    left: 35px;
+    width: 490px;
+  }
+
+  .print-info {
+    position: absolute;
+    top: 55px;
+    right: -25px;
+    width: 400px;
+  }
+}
