@@ -1,0 +1,152 @@
+<div class="container">
+  <div class="row justify-content-center my-5">
+    <div class="col-md-6 col-sm-12">
+
+      <div class='was-validated' novalidate>
+
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input id="name" class="form-control mb-3" type='text' required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class='invalid-feedback'>Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <input id="address" class="form-control mb-3" type='text' required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class='invalid-feedback'>Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="city" class="form-label">City</label>
+          <input id="city" class="form-control mb-3" type='text' required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class='invalid-feedback'>Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="phoneN" class="form-label">Phone Number</label>
+          <input id="phoneN" class="form-control mb-3" type='text' required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class='invalid-feedback'>Please fill out this field.</div>
+        </div>
+
+
+        <label for="email" class="form-label">Email Address</label>
+        <div class="input-group mb-3">
+
+          <input id='email' type="text" class="form-control" placeholder="Username" aria-label="Username" required>
+          <span class="input-group-text">@</span>
+          <input id='server' type="text" class="form-control" placeholder="Server" aria-label="Server" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="sqft-input" class="form-label">Total Square Feet</label>
+          <input id="sqft-input" class="form-control" type='text' required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class='invalid-feedback'>Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="subtotal" class="form-label">Subtotal</label>
+          <input id="subtotal" class="form-control" type='text' required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class='invalid-feedback'>Please fill out this field.</div>
+        </div>
+
+
+
+        <div class="mb-3">
+          <label for="mattePrice" class="form-label">Number to calculate Matte price</label>
+          <input id="mattePrice" class="form-control mb-3" type='text' required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class='invalid-feedback'>Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3">
+          <select id='profile' class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
+            <option selected>Tuff-Rib</option>
+            <option value="1">Standing seam</option>
+          </select>
+          <div class="valid-feedback">Looks good!</div>
+          <div class='invalid-feedback'>Please fill out this field.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="color" class="form-label">Pick a color</label>
+          <div class="input-group has-validation">
+            <span id='colorPalet' width='100px' class="input-group-text"></span>
+
+            <select id='color' class="form-select form-select-lg" aria-label=".form-select-lg example" required>
+              <option value=''>Select a color here</option>
+              <option value="704214">Sepia Brown</option>
+              <option value="414141">Graphite Grey</option>
+              <option value="585E5B">Ebony</option>
+              <option value="a9a9a9">Deep Grey</option>
+              <option value="f8f7ed">Liner White</option>
+              <option value="FFFAFA">White White</option>
+              <option value="F9F6EE">Bone White</option>
+              <option value="979C99">Regent Grey</option>
+              <option value="888c8d">Stone Grey</option>
+              <option value="f2e4c5">Pebble Khaki</option>
+              <option value="cfab79">Buckskin</option>
+              <option value="D2B48C">Tan</option>
+              <option value="e4d3bb">Antique Linen</option>
+              <option value="5F5954">Burnished Slate</option>
+              <option value="654321">Dark Brown</option>
+              <option value="4a2c2a">Coffee Brown</option>
+              <option value="36454F">Charcoal</option>
+              <option value="000000">Black</option>
+              <option value="0A0A0A">Jet Black</option>
+              <option value="4D6B50">Melcher’s Green</option>
+              <option value="6a5acd">Slate Blue</option>
+              <option value="EE4B2B">Bright Red</option>
+              <option value="892d32">Tile Red</option>
+              <option value="8b0000">Dark Red</option>
+              <option value="a8bdc6">Galvanized</option>
+              <option value="BEBDBA">Galvalume</option>
+            </select>
+
+            <div class="valid-feedback">Looks good!</div>
+
+            <div class='invalid-feedback'>Please fill out this field.</div>
+
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="quoteFor" class="form-label">This quote is for? (House, Garage, Shed, etc.)</label>
+          <input id="quoteFor" class="form-control mb-3" type=text value="House">
+        </div>
+
+        <div class="mb-3 d-flex align-items-center">
+          <div class='w-75'>
+            <label class="form-label">This includes Text</label>
+            <textarea id='includesText' class="form-control" rows="3"></textarea>
+            <div class="valid-feedback">Looks good!</div>
+            <div class='invalid-feedback'>Please fill out this field.</div>
+          </div>
+
+          <div class='ms-3'>
+            <input id='defaultIncludesText' type="checkbox" value='Custom Includes Text'>
+            <label class="form-label ms-3">Use Default</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <input id=' matte' type="checkbox">
+          <label class=" mb-3 ms-3">
+            Matte Paint Finish
+          </label>
+        </div>
+
+
+        <div class="text-center">
+          <button id='button' type="button" name="button" class="btn btn-large btn-primary mt-5">Quote Me</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
